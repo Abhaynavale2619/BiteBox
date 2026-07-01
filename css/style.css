@@ -3,8 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 40px;
+    background-color: black;
+}
+
+nav div h2{
+    color: white;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    gap: 20px;
+}
+nav a:hover {
+    color: red;
 }
