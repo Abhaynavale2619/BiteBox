@@ -4,15 +4,19 @@
     box-sizing: border-box;
     font-family: "Playfair Display" , serif;
 }
-
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px 15px 10px;
+    padding: 20px 40px 15px 50px;
     background-color: black;
 }
-
+#logo-sec{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
 nav a{
     color: white;
     text-decoration: none;
@@ -32,4 +36,79 @@ nav li:last-child a{
 nav li:last-child a:hover{
     background: #cc0000;
     color: black;
+}
+.hero{
+    height: 90vh;
+    background: url("../assets/images/b1.png") no-repeat center/cover; 
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    color: white;
+}
+.hero h1{
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 1.1;
+    padding-left: 70px;
+    padding-top: 90px;
+} 
+#delivered{
+    color: red !important;
+}
+.hero p{
+    font-size: 20px;
+    padding-left: 70px;
+}
+.hero button{
+    margin-left: 70px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+.hero button:hover{
+    background-color: darkred;
+}
+.video-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 40px;
+}
+.video-text{
+    flex: 1;
+}
+.video-box{
+    flex: 1;
+}
+.video-box video{
+    width: 100%;
+    border-radius: 10px;
+}
+.video-text h2{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.video-text p{
+    font-size: 18px;
+    color: #444;
+}
+.about{
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+.about h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: rgba(255, 0, 0, 0.615);
+}
+.about p{
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
 }
