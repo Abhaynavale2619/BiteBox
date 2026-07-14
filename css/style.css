@@ -120,3 +120,70 @@ nav li:last-child a:hover{
     color: #555;
     line-height: 1.6;
 }
+/* Menu Page */
+.card{
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card img{
+    width: 100%;
+    object-fit: cover;
+}
+.card button{
+    background: red;
+    color: white;
+    border: none;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+.card button:hover{
+    background: darkred;
+}
+
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px;
+    gap: 20px;
+}
+.category-icon{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    overflow: auto;
+    background: #fff;
+}
+.icon-box{
+    max-width: 100px;
+    text-align: center;
+    cursor: pointer;
+    transform: 0.3s;
+}
+.icon-box img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2 solid #ccc;
+}
+.icon-box p{
+    margin-top: 8px;
+    font-size: 14px;
+}
+.icon-box img:hover{
+    border: black;
+    transform: scale(1.1);
+}
+.icon-box p:hover{
+    color: red;
+}
+header{
+    position: sticky;
+    top: 0;
+}
