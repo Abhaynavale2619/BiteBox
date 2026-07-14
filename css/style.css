@@ -65,6 +65,7 @@ nav li:last-child a:hover{
     padding: 10px 20px;
     background-color: red;
     color: white;
+    border: nonej;
     border-radius: 10px;
 }
 .hero button:hover{
