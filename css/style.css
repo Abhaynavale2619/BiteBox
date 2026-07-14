@@ -8,8 +8,13 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px 15px 50px;
+    padding: 15px 40px 15px 50px;
     background-color: black;
+}
+header{
+    position: sticky;
+    top: 0;
+    /* z-index: 1000; */
 }
 #logo-sec{
     display: flex;
@@ -66,9 +71,12 @@ nav li:last-child a:hover{
     background-color: red;
     color: white;
     border-radius: 10px;
+    cursor: pointer;
+    border:1px solid red;
 }
 .hero button:hover{
     background-color: darkred;
+    border-color: darkred;
 }
 .video-section{
     display: flex;
