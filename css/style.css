@@ -8,18 +8,20 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px 15px 50px;
+    padding: 15px 40px 15px 50px;
     background-color: black;
+    color: white;
 }
-#logo-sec{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
+header{
+    position: sticky;
+    top: 0;
+    /* z-index: 1000; */
 }
 nav a{
-    color: white;
+    font-size: 20px;
+    font-weight: 700;
     text-decoration: none;
+    color: white;
 }
 ul{
     display: flex;
@@ -32,10 +34,10 @@ nav li:last-child a{
     background-color: red;
     padding: 6px 12px;
     border-radius: 5px;
+    color: black;
 }
 nav li:last-child a:hover{
-    background: #cc0000;
-    color: black;
+    background: darkred;
 }
 .hero{
     height: 90vh;
@@ -46,30 +48,35 @@ nav li:last-child a:hover{
     color: white;
 }
 .hero h1{
-    font-size: 64px;
-    font-weight: bold;
+    font-size: 70px;
+    font-weight: 900;
     line-height: 1.1;
-    padding-left: 70px;
+    padding-left: 80px;
     padding-top: 90px;
 } 
 #delivered{
     color: red !important;
 }
 .hero p{
-    font-size: 20px;
-    padding-left: 70px;
+    font-size: 22px;
+    padding-left: 80px;
+    font-weight: 900;
 }
 .hero button{
-    margin-left: 70px;
-    margin-top: 15px;
+    margin-left: 80px;
+    margin-top: 20px;
     padding: 10px 20px;
     background-color: red;
     color: white;
-    border: nonej;
+    border: none;
     border-radius: 10px;
+    cursor: pointer;
+    border:1px solid red;
+    font-weight: 900;
 }
 .hero button:hover{
     background-color: darkred;
+    border-color: darkred;
 }
 .video-section{
     display: flex;
@@ -112,4 +119,155 @@ nav li:last-child a:hover{
     font-size: 18px;
     color: #555;
     line-height: 1.6;
+}
+/* Menu Page */
+.card{
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card img{
+    width: 100%;
+    object-fit: cover;
+}
+.card button{
+    background: red;
+    color: white;
+    border: none;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+.card button:hover{
+    background: darkred;
+}
+
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px;
+    gap: 20px;
+}
+.category-icon{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    overflow: auto;
+    background: #fff;
+}
+.icon-box{
+    max-width: 100px;
+    text-align: center;
+    cursor: pointer;
+    transform: 0.3s;
+}
+.icon-box img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2 solid #ccc;
+}
+.icon-box p{
+    margin-top: 8px;
+    font-size: 14px;
+}
+.icon-box img:hover{
+    border: black;
+    transform: scale(1.1);
+}
+.icon-box p:hover{
+    color: red;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+/* cart */
+.food-item img{
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.food-item{
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    gap: 15px;
+}
+table{
+    width: 70%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+    margin: auto;
+}
+thead{
+    background: red;
+    color: white;
+}
+th,td{
+    padding: 15px;
+    text-align: center;
+}
+tbody tr{
+    border-bottom: 1px solid black;
+}
+.grand-total td{
+    font-weight: bold;
+    font-size: 18px;
+}
+.qty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.qty button{
+    width: 28px;
+    height: 28px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.qty button:hover{
+    background-color: #cc0000;
+}
+.qty span{
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+.remove{
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.remove:hover{
+    background: darkred;
+}
+.proceed{
+    /* margin-top: 15px; */
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.proceed:hover{
+    background: darkred;
 }
