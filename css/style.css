@@ -192,7 +192,9 @@ header{
     position: sticky;
     top: 0;
 }
-/* cart */
+
+/*          cart            */
+
 .food-item img{
     height: 70px;
     width: 70px;
@@ -276,4 +278,57 @@ tbody tr{
 }
 .proceed:hover{
     background: darkred;
+}
+/* auth */
+.auth-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg , #000, #1c1c1c);
+}
+.auth-box{
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0, 8px, 25px, rgba(0, 0, 0, 0.3);
+}
+.auth-box h2{
+    margin-bottom: 20px;
+    color: #000;
+}
+.auth-box input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5pc;
+    outline: none;
+}
+.auth-box input:focus{
+    border-color: red;
+}
+.auth-box button{
+    width: 100%;
+    padding: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.auth-box button:hover{
+    background: darkred;
+}
+.auth-box p{
+    margin-top: 15px;
+    font-size: 14px;
+}
+.auth-box a{
+    color: red;
+    text-decoration: none;
 }
