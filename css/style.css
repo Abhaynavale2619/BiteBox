@@ -39,6 +39,11 @@ nav li:last-child a{
 nav li:last-child a:hover{
     background: darkred;
 }
+.active{
+    padding: 4px;
+    border-bottom: 3px solid red;
+    font-weight: 900;
+}
 .hero{
     height: 90vh;
     background: url("../assets/images/b1.png") no-repeat center/cover; 
@@ -71,12 +76,12 @@ nav li:last-child a:hover{
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    border:1px solid red;
+    /* border:1px solid red; */
     font-weight: 900;
 }
 .hero button:hover{
     background-color: darkred;
-    border-color: darkred;
+    /* border-color: darkred; */
 }
 .video-section{
     display: flex;
@@ -238,6 +243,7 @@ tbody tr{
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: bold;
 }
 .qty button:hover{
     background-color: #cc0000;
