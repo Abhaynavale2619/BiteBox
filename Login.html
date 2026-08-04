@@ -19,14 +19,21 @@
             <form action="">
                 <label for="email"></label>
                 <input type="email" placeholder="Enter Email" name="email" id="email" required>
-                <label for="pass"></label>
-                <input type="password" placeholder="Enter Password" name="pass" id="pass" required>
-                <button type="submit">Login</button>
+                <div style="position: relative;">
+                    <label for="pass"></label>
+                    <input type="password" placeholder="Enter Password" name="pass" id="pass" required>
+                    <span onclick="togglePassword()" style="color:red; cursor: pointer; position: absolute; top: 50%; right: 10px; transform: translateY(-50%);"><i class="fa-solid fa-eye" id="togglePassword"></i></span>
+                </div>
+                <button type="button" onclick="login()">Login</button>
             </form>
+            <p id="error" style="color: red;"></p>
             <p><a href="signup.html">Forgot Password</a></p>
             <p>Don't have an Account <a href="signup.html">SignUp</a></p>
         </div>
     </section>
-    <!-- Start Authentication Section -->
+    <!-- End Authentication Section -->
+
+
+    <script src="javaScript/scripts.js"></script>
 </body>
 </html>
